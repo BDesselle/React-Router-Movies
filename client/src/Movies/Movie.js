@@ -22,7 +22,7 @@ const Movie = (props) => {
         });
 
   },[props]);
-  
+
   // Uncomment this only when you have moved on to the stretch goals
   // const saveMovie = () => {
   //   const addToSavedList = props.addToSavedList;
@@ -33,7 +33,6 @@ const Movie = (props) => {
     return <div>Loading movie information...</div>;
   }
 
-  const { title, director, metascore, stars } = movie;
   return (
     <div className="save-wrapper">
       <MovieCard movie={movie} />
